@@ -39,7 +39,7 @@ class Artist
   end # create
 
   def save
-    self.all << self
+    self.class.all << self
   end # save
 
   def print_songs
