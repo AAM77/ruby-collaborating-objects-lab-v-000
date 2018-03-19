@@ -30,6 +30,7 @@ class Song
 
   def save
     @@all << self
+    Artist.songs << self
     self
   end
 end
