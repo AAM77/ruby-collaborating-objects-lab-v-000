@@ -19,11 +19,11 @@ class Artist
 
   def self.all
     @@all
-  end # all
+  end # .all
 
   def songs
     @songs
-  end
+  end # songs
 
   def self.find_or_create_by_name(name)
     self.find(name) ? self.find(name) : self.create(name)
