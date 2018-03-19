@@ -31,7 +31,7 @@ class Song
   end # artist_name
 
   def save
-    @@all << self
+    self.class.all << self
     artist.songs << self
     self
   end # save
