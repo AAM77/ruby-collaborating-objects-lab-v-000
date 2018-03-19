@@ -15,9 +15,11 @@ class Song
   end # .new_by_filename
 
   def self.find_by_artist(artist)
+    
     Song.all.select do | song |
       song.artist == artist
     end
+    
   end
 
   def self.all
