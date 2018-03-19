@@ -34,5 +34,6 @@ class Song
     @@all << self
     artist.songs << self
     self
-  end
-end
+  end # save
+  
+end # class Song
